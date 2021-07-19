@@ -1,14 +1,27 @@
-// temperature in kelvin
-const kelvin = 293;
-// const kelvin = 0;
+// human age in years
+const myAge = 22;
+// const myAge = 8;
 
-// temperature from kelvin to celcius
-const celcius = kelvin - 273;
+// early years
+let earlyYears = 2;
 
-// temperature in fahrenheit calculation
-let fahrenheit = celcius * (9 / 5) + 32;
+// ealy years calculation
+earlyYears *= 10.5;
 
-// temperature in fahrenheit rounded
-fahrenheit = Math.floor(fahrenheit);
+// taking 2years out of human years
+let laterYears = myAge - 2;
 
-console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
+// calculate the number of dog years accounted for by your later years
+laterYears *= 4;
+
+// human age in dog years
+let myAgeInDogYears = earlyYears + laterYears;
+
+// convert my name to lowercase letters
+const myName = "Zacchaeus".toLowerCase();
+
+console.log(
+  `My name is ${myName}. I am ${myAge}  
+  years old in human years which is
+  ${myAgeInDogYears}  years old in dog years.`
+);
